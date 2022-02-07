@@ -1,0 +1,268 @@
+:root{
+    --primary-color: #5072e4;
+    --secondary-color: #308EC5;
+    --third-color: #ECC032;
+    --font-primary: "Open Sans", Arial, Sans-serif;
+    --body-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+body{
+    font-family: var(--font-primary);
+    font-size: var(--body-size);
+}
+
+.thumb {
+    width: 100px;
+}
+
+.btn {
+    display: block;
+    border-radius: 2px;
+    box-align: center;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--third-color);
+    border: 1px solid var(--third-color);
+}
+
+
+/* ----- ----- HEADER ----- ----- */
+.cover-header{
+    background: url(../img/bg-1.png), rgba(199, 230, 235, 0.466);
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    width: 80px;
+    height: 50px;
+}
+
+.logo img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.logo2{
+    width: 100px;
+}
+
+.logo2 img{
+    width: 100%;
+    vertical-align: top;
+}
+
+header .menu {
+    background: rgba(9, 146, 238, 0.356);;
+    margin-bottom: 1.25em;
+}
+
+header .menu ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+header .menu ul li {
+    float: left;
+    display: inline-block;
+}
+
+header .menu ul li a {
+    display: inline-block;
+    padding: 1em 1.25em;
+    font-size: 0.87em;
+    color: #fff;
+}
+
+header .menu ul li a:hover {
+    text-decoration: none;
+    background: var(--secondary-color);
+}
+
+header .textos {
+    color: #fff;
+    text-align: center;
+}
+
+header .textos .primera_linea,
+header .textos .segunda_linea {
+    font-family: var(--font-primary);
+    font-weight: 300;
+}
+
+header .textos .primera_linea {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+header .textos .segunda_linea {
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.contenedor-btns a{
+    border-radius: 4px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 40px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    transition: .3s ease background-color;
+}
+
+.contenedor-btns a:hover {
+    text-decoration: none;
+    background-color: var(--primary-color);
+}
+
+.menu-right{text-align: right;}
+
+.menu-right a{
+    color: var(--primary-color);
+    padding-right: 10px;
+    transition: .3s ease color;
+    font-size: 13px;
+}
+
+.menu-right a:hover{
+    color: var(--secondary-color)
+}
+
+.cover-init{background-color: rgb(255, 255, 255);}
+
+
+/* ----- ----- FOOTER ----- ----- */
+footer{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.titulo{
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.titulo2{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.calle,
+.telefono,
+.correo {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.enlace-social{
+    display: inline-block;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease background-color;
+}
+
+.facebook{
+    background-color: #3b5998;
+    color:#fff;
+}
+
+.facebook:hover{
+    background-color: #fff;
+    color:#3b5998;
+}
+.instagram{
+    background-color: #e1306c;
+    color:#fff;
+}
+
+.instagram:hover{
+    background-color: #fff;
+    color:#e1306c;
+}
+.twitter{
+    background-color: #1da1f2;
+    color:#fff;
+}
+
+.twitter:hover{
+    background-color: #fff;
+    color:#1da1f2;
+}
+
+@media screen and (max-width: 992px) {
+    header .contenedor_logo_menu .logo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    header .contenedor_logo_menu .menu {
+        text-align: center;
+    }
+    header .contenedor_logo_menu .menu a {
+        margin: 0 20px;
+    }
+    header .textos{
+        margin: 50px 0;
+        font-size: 16px;
+    }
+    header .textos .contenedor-btns a {
+        margin-bottom: 10px;
+    }
+    .main .fotos .foto .titulo {
+        margin-top: 0;
+    }
+    .main .clientes .cliente {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main .caracteristicas .caracteristica {
+        margin-bottom: 40px;
+    }
+    .main .fotos .foto {
+        text-align: center;
+    }
+    .main .fotos .foto .texto * {
+        text-align: left;
+    }
+    .main .fotos .foto .texto p {
+        margin-bottom: 10px;
+    }
+    .main .precios .precio {
+        margin-bottom: 20px;
+    }
+    footer .direccion {
+        text-align: center;
+    }
+}

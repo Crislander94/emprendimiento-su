@@ -4,7 +4,7 @@
         private $host = "localhost";
         private $username = "root";
         private $password = "";
-        private $database = "empresa_multientregas";
+        private $database = "pclink";
         public function getconnection(){
             $this->connection = null;
             try{

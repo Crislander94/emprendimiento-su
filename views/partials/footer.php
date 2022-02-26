@@ -3,13 +3,13 @@
 		<div class="row mx-0">
 			<div  class="col-md-4">
 				<div class="logo2 mx-auto mb-4 text-center">
-					<a href="<?=RUTA?>"><img src="<?=RUTA?>assets/img/logo.png" alt="#Logo-Principal"></a>
+					<a href="<?php echo RUTA?>"><img src="<?php echo RUTA?>assets/img/logo.png" alt="#Logo-Principal"></a>
 				</div>
 				<h6 class="titulo2 text-center">Redes sociales </h6>
 				<div class="d-flex justify-content-center align-items-center">
-					<a class="facebook enlace-social" 	target="_blank" href="#"><i class="fa fa-facebook"></i></a>
-					<a class="instagram enlace-social" 	target="_blank" href="https://www.instagram.com/pclink_ec/"><i class="fa fa-instagram"></i></a>
-					<a class="twitter enlace-social" 	target="_blank" href="https://twitter.com/pclink_ec"><i class="fa fa-twitter"></i></a>
+					<!-- <a class="facebook enlace-social" 	target="_blank" href="#"><i class="fab fa-facebook-f"></i></a> -->
+					<a class="instagram enlace-social" 	target="_blank" href="https://www.instagram.com/pclink_ec/"><i class="fab fa-instagram"></i></a>
+					<a class="twitter enlace-social" 	target="_blank" href="https://twitter.com/pclink_ec"><i class="fab fa-twitter"></i></a>
 				</div>
 			</div>
 
@@ -23,8 +23,21 @@
 		</div>
 	</div>
 </footer>
-
-<script src="assets/js/main.js"></script>
-<script src="assets/icons/all.js"></script>
+<script src="<?php echo RUTA ?>assets/plugins/sweetAlert2/sweetalert2.all.min.js"></script>
+<script src="<?php echo RUTA ?>assets/plugins/bootstrap-5/bootstrap.bundle.min.js"></script>
+<!-- <script src="<?php echo RUTA ?>assets/plugins/popper/popper.min.js"></script> -->
+<script>
+	$(document).ready(function () {
+		$(".toggle-password").click(function() {
+			$(this).find('i').toggleClass("fa-eye fa-eye-slash");
+			var input = $($(this).attr("toggle")); 
+			if (input.attr("type") == "password") {
+				input.attr("type", "text");
+			} else {
+				input.attr("type", "password");
+			}
+		});
+	});
+</script>
 </body>
 </html>

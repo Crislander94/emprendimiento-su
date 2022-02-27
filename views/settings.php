@@ -33,7 +33,7 @@
             </div>
 
             <div class="col-12 d-flex justify-content-center">
-                <button class="btn btn-primary2">Guardar Configruacion</button>
+                <button class="btn btn-primary2">Guardar Configuracion</button>
             </div>
         </form>
     </div>
@@ -44,8 +44,3 @@
     $('#cp3').colorpicker({});
   });
 </script>
-<!-- session_start();
-setcookie("letra_cliente",$_POST["letra"].' !important;',time()+60*60*24*360,'/');
-if(isset($_COOKIE["letra_cliente"])){
-$font_family = $_COOKIE["letra_cliente"];
-} -->

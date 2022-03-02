@@ -77,7 +77,7 @@
                                 <p class="title_product" style="cursor:pointer" onclick="redireccionar('<?= RUTA ?>producto/detalle&id=<?= $id ?>')">
                                     <?php if($nom_producto != ''):?>
                                         <?php if(strlen($nom_producto) > 20) : 
-                                            echo substr($nom_producto, 0, 20).'...';    
+                                            echo substr($nom_producto, 0, 20).'...';
                                         ?>
                                         <?php else:
                                             echo $nom_producto;
@@ -88,17 +88,11 @@
                                     <?php endif; ?>
                                 </p>
                                 <p class="description_product">
-                                    <?php if($detalle_producto != ''):?>
-                                        <?php if(strlen($detalle_producto) > 20) : 
-                                            echo substr($detalle_producto, 0, 20).'...';    
-                                        ?>
-                                        <?php else: 
-                                            echo $detalle_producto;
-                                            endif;
-                                        ?>
-                                    <?php else: ?>
-                                        Sin Detalle de producto.
-                                    <?php endif; ?>
+                                    <?php if($detalle_producto != ''):
+                                        echo $detalle_producto;
+                                    else:
+                                        echo 'Sin Detalle de producto.';
+                                   endif; ?>
                                 </p>
                                 <p class="price_product">$<?php echo number_format($precio_producto, 2)?></p>
                             </div>

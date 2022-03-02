@@ -92,19 +92,13 @@
                                         Sin Nombre de producto.
                                     <?php endif; ?>
                                 </p>
-                                <p class="description_product">
-                                    <?php if($detalle_producto != ''):?>
-                                        <?php if(strlen($detalle_producto) > 20) : 
-                                            echo substr($detalle_producto, 0, 20).'...';    
-                                        ?>
-                                        <?php else: 
-                                            echo $detalle_producto;
-                                            endif;
-                                        ?>
-                                    <?php else: ?>
-                                        Sin Detalle de producto.
-                                    <?php endif; ?>
-                                </p>
+                                <div class="description_product">
+                                    <?php if($detalle_producto != ''):
+                                        echo $detalle_producto;
+                                    else:
+                                        echo 'Sin Detalle de producto.';
+                                   endif; ?>
+                                </div>
                                 <p class="price_product">$<?php echo $precio_producto?></p>
                             </div>
                         </div>

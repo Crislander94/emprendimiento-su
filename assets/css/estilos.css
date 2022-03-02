@@ -456,10 +456,25 @@ footer{
     color: #000;
     margin-bottom: 5px;
 }
-.card-body_custom_product_fact .description_product p{
+.card-body_custom_product_fact .description_product{
     font-size: 14px;
     font-weight: 300;
+    height: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+
+.description_product::-webkit-scrollbar{
+    width: 3px;
+}
+.description_product::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: 6px;
+}
+.description_product::-webkit-scrollbar-track{
+    background-color: var(--secondary-color);
+}
+
 .card-body_custom_product_fact .price_product{
     font-size: 18px;
     font-weight: 600;

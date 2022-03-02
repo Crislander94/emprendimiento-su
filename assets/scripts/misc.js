@@ -107,7 +107,7 @@ function decimalNumbers(e, field) {
 }
 
 function getPathOrigin(){
-    return window.location.origin +'/proyecto-emprendimiento-main/';
+    return window.location.origin +'/emprendimiento-su/';
 }
 
 const getTotal = () => {

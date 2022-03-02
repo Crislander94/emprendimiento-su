@@ -1,7 +1,7 @@
 <?php
     //Ruta Total de la app
     $ruta = $_SERVER['HTTP_HOST'];
-    $ruta_final = 'http://'.$ruta.'/proyecto-emprendimiento-main/';
+    $ruta_final = 'http://'.$ruta.'/emprendimiento-su/';
     // $ruta_final = './';
     define('RUTA', $ruta_final);
     
